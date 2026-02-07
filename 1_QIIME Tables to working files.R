@@ -15,6 +15,16 @@ script_title <- "rarefied_tables"
 # - create Matrix.names.csv for other scripts
 # - ready tables for use in other scripts
 # - drop low sample counts, rarefy, filter to minimum counts or relative abundance
+
+ReadMe='
+Set making_matrix_names<-"yes" and run script. It will error and tell you to deselect.
+set making_matrix_names<-"no"; set making_raw_matrix<-"yes" and run It will error 
+and tell you to deselect.
+set making_raw_matrix<-"no";set making_rarefied_matrix<-making_filtered_matrix<-"yes"
+and run.
+
+Script automatically creates directories.
+'
 ################################################################################
 
 ################################################################################
@@ -25,8 +35,8 @@ making_raw_matrix<-making_rarefied_matrix<-look_at_counts<-testing<-"no"
 testing    
 
 # NOTE: set to 'yes' to run that section
-# making_matrix_names     <- "yes"
-# making_raw_matrix       <- "yes"
+ making_matrix_names     <- "yes" # will need to turn off after completion to proceed
+ making_raw_matrix       <- "yes" # will need to turn off after completion to proceed
 # look_at_counts          <- "yes"
 
 # rarefying
